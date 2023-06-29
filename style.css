@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./ssn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input-group {
+    margin-top: 11%;
+}
+.card {
+    position: relative;
+    z-index: ;
+  }
+  .card-body {
+    background-color: white;
+    opacity: 0.9;
+    z-index: 1;
+  }
+  
