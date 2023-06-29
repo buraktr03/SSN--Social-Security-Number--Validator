@@ -10,20 +10,23 @@ body {
   background-size: cover;
 }
 
+
 .input-group {
-    margin-top: 11%;
+  margin-top: 11%;
+  
 }
 
-#validConc{
-    margin-top: 6%;
-    font-family: 'Fasthand', cursive;
-    font-size: 6rem;
-    font-weight: 400;
+#validConc {
+  margin-top: 6%;
+  font-family: "Fasthand", cursive;
+  font-size: 6rem;
+  font-weight: 400;
 }
 
-#parag{
-    margin-top: 13%;
-    font-family: 'Fasthand', cursive;
-    font-size: 3rem;
-    color: black;
+#parag {
+  margin-top: 13%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  color:darkblue;
 }
