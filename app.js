@@ -1,7 +1,7 @@
 const ssn = document.getElementById("ssn");
 const validate = document.getElementById("btn");
 const reset = document.getElementById("reset-btn");
-const result = document.getElementById("result");
+const result = document.querySelector(".result");
 
 function validateSsn() {
   let value = ssn.value;
@@ -21,20 +21,14 @@ function validateSsn() {
   let thirdPart = Number(numberStr.slice(5));
 
   let trueNumber = `
-    <div class="card">
-      <div class="card-body bg-success">
-        Entered SSN (${firstPart}-${secondPart}-${thirdPart}) is valid!
-      </div>
-    </div>
+    <p id="parag">Entered SSN (${firstPart}-${secondPart}-${thirdPart}) is</p>
+    <h3 id="validConc" style=" color: green">&check; Validated &check;</h3>
   `;
 
   let falseNumber = `
-    <div class="card">
-      <div class="card-body bg-danger">
-        Entered SSN (${firstPart}-${secondPart}-${thirdPart}) is not valid!
-      </div>
-    </div>
-  `;
+    <p id="parag">Entered SSN (${firstPart}-${secondPart}-${thirdPart}) is</p>
+    <h3 id="validConc" style=" color: red">X Not Validated X</h3> 
+    `;
 
   if (
     (firstPart >= 900 && firstPart <= 999) ||
@@ -52,7 +46,7 @@ function validateSsn() {
 }
 
 validate.addEventListener("click", validateSsn);
-reset.addEventListener("click", function() {
+reset.addEventListener("click", function () {
   ssn.value = "";
   result.innerHTML = "";
 });

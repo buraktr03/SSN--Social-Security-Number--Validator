@@ -13,13 +13,17 @@ body {
 .input-group {
     margin-top: 11%;
 }
-.card {
-    position: relative;
-    z-index: ;
-  }
-  .card-body {
-    background-color: white;
-    opacity: 0.9;
-    z-index: 1;
-  }
-  
+
+#validConc{
+    margin-top: 6%;
+    font-family: 'Fasthand', cursive;
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+#parag{
+    margin-top: 13%;
+    font-family: 'Fasthand', cursive;
+    font-size: 3rem;
+    color: black;
+}
